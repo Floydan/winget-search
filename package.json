@@ -1,0 +1,32 @@
+{
+  "name": "winget-search",
+  "version": "1.0.0",
+  "description": "An algolia search implementation of winget packages",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Floydan/winget-search.git"
+  },
+  "keywords": [
+    "winget",
+    "algolia",
+    "search"
+  ],
+  "author": "Joakim Höglund <hoglund.joakim@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Floydan/winget-search/issues"
+  },
+  "homepage": "https://github.com/Floydan/winget-search#readme",
+  "dependencies": {
+    "algoliasearch": "^4.8.6",
+    "axios": "^0.21.1",
+    "bluebird": "^3.7.2",
+    "dotenv": "^8.2.0",
+    "lodash": "^4.17.21"
+  }
+}
