@@ -1,6 +1,8 @@
 const axios = require('axios').default,
     AlgoliaClient = require('./helpers/algolia-client.js');
 
+require('dotenv').config();
+
 const client = new AlgoliaClient();
 
 //quick proof of concept of the  algolia indexing using the eminent https://winstall.app api
@@ -24,5 +26,5 @@ axios.get('https://api.winstall.app/apps').then((res) => {
         updatedAt: p.updatedAt
     }));
 
-    client.addObjects('dev_winget-search', packages, 1000);
+    client.addObjects(process.env.ALGOLIA_INDEX_NAME, packages, 1000);
 });

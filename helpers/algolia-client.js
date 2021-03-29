@@ -1,5 +1,3 @@
-require('dotenv').config();
-
 const _ = require('lodash');
 const algoliasearch = require('algoliasearch');
 const Bluebird = require('bluebird');
